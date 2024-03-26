@@ -1,5 +1,6 @@
 package br.com.alura.screenmath.modelos;
 
+
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
@@ -37,6 +38,7 @@ public class Titulo {
     }
 
     public void setAnoDeLancamento(int anoDeLancamento) {
+
         this.anoDeLancamento = anoDeLancamento;
     }
 
@@ -59,4 +61,5 @@ public class Titulo {
     public int getTotalDeAvaliacoes() {
         return this.totalDeAvaliacoes;
     }
+
 }
