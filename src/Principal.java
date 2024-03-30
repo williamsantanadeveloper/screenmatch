@@ -5,6 +5,8 @@ import br.com.alura.screenmath.modelos.Filme;
 import br.com.alura.screenmath.modelos.Titulo;
 import br.com.alura.screenmath.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -50,5 +52,20 @@ public class Principal {
         episodio.setSerie(lost);
         episodio.setTotalDeVizualizacoes(300);
         filtro.filtra(episodio);
+
+        var filmePaulo = new Filme();
+        filmePaulo.setNome("Dogville");
+        filmePaulo.setDuracaoEmMinutos(200);
+        filmePaulo.setAnoDeLancamento(2003);
+        filmePaulo.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmePaulo);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
+        System.out.println("toString do filme: " + listaDeFilmes.get(0).toString());
     }
 }
