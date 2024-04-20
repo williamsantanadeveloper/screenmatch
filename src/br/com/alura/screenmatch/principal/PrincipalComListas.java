@@ -4,9 +4,7 @@ import br.com.alura.screenmath.modelos.Filme;
 import br.com.alura.screenmath.modelos.Serie;
 import br.com.alura.screenmath.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class PrincipalComListas {
         filmePaulo.avalia(10);
         Filme f1 = filmePaulo;
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(filmePaulo);
         lista.add(meuFilme);
         lista.add(outroFilme);
